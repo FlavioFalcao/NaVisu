@@ -191,9 +191,12 @@ public final class ChartViewTopComponent extends TopComponent implements Explore
     public void updateManager() {
         manager.setRootContext(new ChartsRootNode<>(Children.create(new ChartChildFactory(charts), true)));
     }
-    
+
     public void displayNonTiled(boolean choice) {
         displayNonTiled = choice;
+        if (controller == null) {
+            loadController();
+        }
         updateCatalog(controller.getCharts());
     }
 }
