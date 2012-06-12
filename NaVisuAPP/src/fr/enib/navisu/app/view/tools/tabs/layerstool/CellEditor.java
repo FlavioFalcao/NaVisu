@@ -1,7 +1,8 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Ecole Nationale d'Ingénieurs de Brest (ENIB) - France
+ * (2012)
  */
+
 package fr.enib.navisu.app.view.tools.tabs.layerstool;
 
 import java.awt.BorderLayout;
@@ -14,8 +15,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeCellEditor;
 
 /**
- *
- * @author jordan
+ * @author Jordan MENS & Thibault PENSEC
+ * @date 24/05/2012
  */
 public class CellEditor implements TreeCellEditor {
     

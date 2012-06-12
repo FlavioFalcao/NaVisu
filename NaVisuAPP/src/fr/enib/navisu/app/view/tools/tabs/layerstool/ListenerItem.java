@@ -1,8 +1,7 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Ecole Nationale d'Ingénieurs de Brest (ENIB) - France
+ * (2012)
  */
-
 package fr.enib.navisu.app.view.tools.tabs.layerstool;
 
 import gov.nasa.worldwind.layers.Layer;
@@ -11,8 +10,8 @@ import java.awt.event.ItemListener;
 import java.util.logging.Logger;
 
 /**
- * @author Jordan MENS & Thibault PENSEC
- * @date 04/06/2012
+ * @author Thibault PENSEC & Jordan MENS
+ * @date 24/05/2012
  */
 public class ListenerItem implements ItemListener{
 
