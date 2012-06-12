@@ -71,6 +71,7 @@ public class WWChart {
             WWKAPLayerInfo info = loadLayerInfo(layerCache);
             if(info != null) {
                 isTiled = true;
+                
                 tiledImageLayerView = new ChartTiledImageLayer(
                         info.getChartID(),  
                         info.getNumEmptyLevels(), 
@@ -128,7 +129,7 @@ public class WWChart {
                 setPolygonOpacity(0);
             } else {
                 WWUtils.removeLayer(wwd, tiledImageLayerView);
-                setPolygonOpacity(oldOpacity);
+                setPolygonOpacity(oldOpacity, true);
             }
             
             isVisible = visible;
@@ -136,8 +137,12 @@ public class WWChart {
     }
     
     public void setPolygonOpacity(double opacity) {
+        setPolygonOpacity(opacity, false);
+    }
+    
+    private void setPolygonOpacity(double opacity, boolean force) {
 
-        if(!isVisible) {
+        if(!isVisible || force) {
             if (opacity < 0) {
                 throw new IllegalArgumentException("Opacity must be greater or equal than 0. (Example : minOpacity = 0.000001).");
             }

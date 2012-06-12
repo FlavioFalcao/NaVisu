@@ -44,6 +44,7 @@ public class ChartTiledImageLayer extends BasicTiledImageLayer {
                 LAT_DEG, LON_DEG, 
                 TILE_WIDTH, TILE_HEIGHT));
         
+        setName(tileName);
         setUseTransparentTextures(true);
     }
     
