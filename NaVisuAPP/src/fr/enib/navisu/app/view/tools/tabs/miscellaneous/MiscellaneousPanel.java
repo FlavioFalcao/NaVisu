@@ -96,7 +96,7 @@ public class MiscellaneousPanel extends javax.swing.JPanel {
         wwd.redraw();
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"unchecked", "rawtypes"})
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 

@@ -26,7 +26,7 @@ import org.openide.windows.WindowManager;
 @ConvertAsProperties(dtd = "-//fr.enib.navisu.app.view.tools//Tools//EN", autostore = false)
 @TopComponent.Description(
     preferredID = "ToolsTopComponent",
-    iconBase = "fr/enib/navisu/app/view/tools/picto_tool.png",
+    iconBase = "fr/enib/navisu/app/view/images/tools-wizard.png",
     persistenceType = TopComponent.PERSISTENCE_ALWAYS)
 @TopComponent.Registration(mode = "leftSlidingSide", openAtStartup = true)
 @ActionID(category = "Window", id = "fr.enib.navisu.app.view.tools.ToolsTopComponent")
