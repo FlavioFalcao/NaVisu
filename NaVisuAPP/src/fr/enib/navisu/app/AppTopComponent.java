@@ -113,7 +113,7 @@ public final class AppTopComponent extends TopComponent implements
             
             firstTime = !firstTime;
             
-            initWWJ();
+            initWWJ(); 
             initWWJLayers();
             initController();
             loadDatabase();
