@@ -38,8 +38,6 @@ import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
-import java.util.prefs.PreferenceChangeEvent;
-import java.util.prefs.PreferenceChangeListener;
 import java.util.prefs.Preferences;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
@@ -76,7 +74,6 @@ import org.openide.windows.TopComponent;
 public final class AppTopComponent extends TopComponent implements
         CatalogService,
         SimulatorEventListener,
-        PreferenceChangeListener,
         ChartsControllerEventListener {
 
     private static final KAPChartCatalogDB DB = new KAPChartCatalogDB();
@@ -114,8 +111,7 @@ public final class AppTopComponent extends TopComponent implements
             
             firstTime = !firstTime;
             
-            initRCP();
-            initWWJ();
+            initWWJ(); 
             initWWJLayers();
             initController();
             loadDatabase();
@@ -124,11 +120,6 @@ public final class AppTopComponent extends TopComponent implements
     }
 
     //<editor-fold defaultstate="collapsed" desc="Init. Methods">
-    private void initRCP() {
-        print("Initialize RCP's components.");
-        PREFS.addPreferenceChangeListener(this);
-    }
-
     private void initWWJ() {
         print("Initialize WorldWind's components.");
         
@@ -258,9 +249,6 @@ public final class AppTopComponent extends TopComponent implements
         CATALOG = catalog;
         CONTROLLER.clear();
         CONTROLLER.addAll(catalog);
-
-        //ChartViewTopComponent chartView = Lookup.getDefault().lookup(ChartViewTopComponent.class);
-        //chartView.updateCatalog(CATALOG);
     }
 
     @Override // ChartsControllerEventListener
@@ -284,21 +272,6 @@ public final class AppTopComponent extends TopComponent implements
                     Exceptions.printStackTrace(ex);
                 }
             }
-        }
-    }
-
-    @Override
-    public void preferenceChange(PreferenceChangeEvent evt) {
-
-        final String key = evt.getKey();
-        
-        switch (key) {
-            
-            case ChartsPanel.KEY_STRING_CACHE : 
-                break;
-                
-            default:
-                break;
         }
     }
     //</editor-fold>
