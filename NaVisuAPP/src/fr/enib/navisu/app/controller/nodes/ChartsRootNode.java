@@ -33,7 +33,12 @@ public class ChartsRootNode<T> extends AbstractNode {
 
     @Override
     public Image getIcon(int type) {
-        return ImageUtilities.loadImage("fr/enib/navisu/app/view/explorer/valid.gif");
+        return ImageUtilities.loadImage("fr/enib/navisu/app/view/images/folder-yellow.png");
+    }
+
+    @Override
+    public Image getOpenedIcon(int type) {
+        return ImageUtilities.loadImage("fr/enib/navisu/app/view/images/folder-yellow_open.png");
     }
     
     @Override
