@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Tools">
+            <file name="fr-enib-navisu-app-controller-actions-DisplayChartsManagerAction.instance">
+                <!--fr.enib.navisu.app.controller.actions.DisplayChartsManagerAction-->
+                <attr
+                    bundlevalue="fr.enib.navisu.app.controller.actions.Bundle#CTL_DisplayChartsManagerAction" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="fr.enib.navisu.app.controller.actions.DisplayChartsManagerAction"/>
+                <attr name="iconBase" stringvalue="fr/enib/navisu/app/controller/actions/update-db.png"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="fr-enib-navisu-app-controller-actions-DisplayNonTiledAction.instance">
+                <!--fr.enib.navisu.app.controller.actions.DisplayNonTiledAction-->
+                <attr
+                    bundlevalue="fr.enib.navisu.app.controller.actions.Bundle#CTL_DisplayNonTiledAction" name="displayName"/>
+                <attr name="instanceCreate" newvalue="fr.enib.navisu.app.controller.actions.DisplayNonTiledAction"/>
+            </file>
+            <file name="fr-enib-navisu-app-controller-actions-GazetteerAction.instance">
+                <!--fr.enib.navisu.app.controller.actions.GazetteerAction-->
+                <attr
+                    bundlevalue="fr.enib.navisu.app.controller.actions.Bundle#CTL_GazetteerAction" name="displayName"/>
+                <attr name="instanceCreate" newvalue="fr.enib.navisu.app.controller.actions.GazetteerAction"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="fr-enib-navisu-app-AppTopComponent.instance">
+                <!--fr.enib.navisu.app.AppTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="fr.enib.navisu.app.AppTopComponent"/>
+                <attr name="preferredID" stringvalue="AppTopComponent"/>
+                <attr
+                    bundlevalue="fr.enib.navisu.app.Bundle#CTL_AppAction" name="displayName"/>
+                <attr name="iconBase" stringvalue="fr/enib/navisu/app/earth-16x16.png"/>
+            </file>
+            <file name="fr-enib-wwbsbapp-view-explorer-ChartViewTopComponent.instance">
+                <!--fr.enib.navisu.app.view.explorer.ChartViewTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="fr.enib.navisu.app.view.explorer.ChartViewTopComponent"/>
+                <attr name="preferredID" stringvalue="ChartViewTopComponent"/>
+                <attr
+                    bundlevalue="fr.enib.navisu.app.view.explorer.Bundle#CTL_ChartViewAction" name="displayName"/>
+                <attr name="iconBase" stringvalue="fr/enib/wwbsbapp/view/explorer/map_magnify.png"/>
+            </file>
+            <file name="fr-enib-navisu-app-view-tools-ToolsTopComponent.instance">
+                <!--fr.enib.navisu.app.view.tools.ToolsTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="fr.enib.navisu.app.view.tools.ToolsTopComponent"/>
+                <attr name="preferredID" stringvalue="ToolsTopComponent"/>
+                <attr
+                    bundlevalue="fr.enib.navisu.app.view.tools.Bundle#CTL_ToolsAction" name="displayName"/>
+                <attr name="iconBase" stringvalue="fr/enib/navisu/app/view/tools/picto_tool.png"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Tools">
+            <file name="fr-enib-navisu-app-controller-actions-DisplayChartsManagerAction.shadow">
+                <!--fr.enib.navisu.app.controller.actions.DisplayChartsManagerAction-->
+                <attr name="originalFile" stringvalue="Actions/Tools/fr-enib-navisu-app-controller-actions-DisplayChartsManagerAction.instance"/>
+                <attr intvalue="0" name="position"/>
+            </file>
+            <file name="fr-enib-navisu-app-view-tools-ToolsTopComponent.shadow">
+                <!--fr.enib.navisu.app.view.tools.ToolsTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/fr-enib-navisu-app-view-tools-ToolsTopComponent.instance"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="fr-enib-navisu-app-AppTopComponent.shadow">
+                <!--fr.enib.navisu.app.AppTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/fr-enib-navisu-app-AppTopComponent.instance"/>
+            </file>
+            <file name="fr-enib-wwbsbapp-view-explorer-ChartViewTopComponent.shadow">
+                <!--fr.enib.navisu.app.view.explorer.ChartViewTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/fr-enib-wwbsbapp-view-explorer-ChartViewTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Shortcuts">
+        <file name="D-U.shadow">
+            <!--fr.enib.navisu.app.controller.actions.DisplayChartsManagerAction-->
+            <attr name="originalFile" stringvalue="Actions/Tools/fr-enib-navisu-app-controller-actions-DisplayChartsManagerAction.instance"/>
+        </file>
+    </folder>
+    <folder name="Toolbars">
+        <folder name="Navisu">
+            <file name="fr-enib-navisu-app-controller-actions-DisplayNonTiledAction.shadow">
+                <!--fr.enib.navisu.app.controller.actions.DisplayNonTiledAction-->
+                <attr name="originalFile" stringvalue="Actions/Tools/fr-enib-navisu-app-controller-actions-DisplayNonTiledAction.instance"/>
+                <attr intvalue="3333" name="position"/>
+            </file>
+            <file name="fr-enib-navisu-app-controller-actions-GazetteerAction.shadow">
+                <!--fr.enib.navisu.app.controller.actions.GazetteerAction-->
+                <attr name="originalFile" stringvalue="Actions/Tools/fr-enib-navisu-app-controller-actions-GazetteerAction.instance"/>
+                <attr intvalue="200" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="OptionsDialog">
+        <folder name="NaVisu">
+            <file name="fr-enib-navisu-app-view-settings-charts-ChartsOptionsPanelController.instance">
+                <!--fr.enib.navisu.app.view.settings.charts.ChartsOptionsPanelController-->
+                <attr
+                    methodvalue="org.netbeans.spi.options.AdvancedOption.createSubCategory" name="instanceCreate"/>
+                <attr name="controller" newvalue="fr.enib.navisu.app.view.settings.charts.ChartsOptionsPanelController"/>
+                <attr
+                    bundlevalue="fr.enib.navisu.app.view.settings.charts.Bundle#AdvancedOption_DisplayName_Charts" name="displayName"/>
+                <attr
+                    bundlevalue="fr.enib.navisu.app.view.settings.charts.Bundle#AdvancedOption_Keywords_Charts" name="keywords"/>
+                <attr name="keywordsCategory" stringvalue="NaVisu/Charts"/>
+            </file>
+            <!--fr.enib.navisu.app.view.settings-->
+            <attr intvalue="0" name="position"/>
+        </folder>
+        <file name="NaVisu.instance">
+            <!--fr.enib.navisu.app.view.settings-->
+            <attr
+                methodvalue="org.netbeans.spi.options.OptionsCategory.createCategory" name="instanceCreate"/>
+            <attr name="advancedOptionsFolder" stringvalue="OptionsDialog/NaVisu"/>
+            <attr
+                bundlevalue="fr.enib.navisu.app.view.settings.Bundle#OptionsCategory_Name_NaVisu" name="categoryName"/>
+            <attr name="iconBase" stringvalue="fr/enib/navisu/app/view/settings/frame32.gif"/>
+            <attr
+                bundlevalue="fr.enib.navisu.app.view.settings.Bundle#OptionsCategory_Keywords_NaVisu" name="keywords"/>
+            <attr name="keywordsCategory" stringvalue="NaVisu"/>
+        </file>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="AppTopComponent.settings">
+                <!--fr.enib.navisu.app.AppTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="fr.enib.navisu.app.AppTopComponent"/>
+</settings>
+]]></file>
+            <file name="ChartViewTopComponent.settings">
+                <!--fr.enib.navisu.app.view.explorer.ChartViewTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="fr.enib.navisu.app.view.explorer.ChartViewTopComponent"/>
+</settings>
+]]></file>
+            <file name="ToolsTopComponent.settings">
+                <!--fr.enib.navisu.app.view.tools.ToolsTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="fr.enib.navisu.app.view.tools.ToolsTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="AppTopComponent.wstcref">
+                    <!--fr.enib.navisu.app.AppTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="AppTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+            <folder name="explorer">
+                <file name="ChartViewTopComponent.wstcref">
+                    <!--fr.enib.navisu.app.view.explorer.ChartViewTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="ChartViewTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+            <folder name="leftSlidingSide">
+                <file name="ToolsTopComponent.wstcref">
+                    <!--fr.enib.navisu.app.view.tools.ToolsTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="ToolsTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="fr_enib_navisu_app">
+                <file name="App" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--fr.enib.navisu.app.AppTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//fr.enib.navisu.app//App//EN"/>
+                </file>
+            </folder>
+            <folder name="fr_enib_wwbsbapp_view_explorer">
+                <file name="ChartView" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--fr.enib.navisu.app.view.explorer.ChartViewTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//fr.enib.wwbsbapp.view.explorer//ChartView//EN"/>
+                </file>
+            </folder>
+            <folder name="fr_enib_navisu_app_view_tools">
+                <file name="Tools" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--fr.enib.navisu.app.view.tools.ToolsTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//fr.enib.navisu.app.view.tools//Tools//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="fr">
+                <folder name="enib">
+                    <folder name="navisu">
+                        <folder name="app">
+                            <file name="AppTopComponent">
+                                <!--fr.enib.navisu.app.AppTopComponent-->
+                                <attr name="settings.providerPath" stringvalue="xml/lookups//fr_enib_navisu_app/App.instance"/>
+                            </file>
+                            <folder name="view">
+                                <folder name="explorer">
+                                    <file name="ChartViewTopComponent">
+                                    <!--fr.enib.navisu.app.view.explorer.ChartViewTopComponent-->
+                                    <attr
+                                    name="settings.providerPath" stringvalue="xml/lookups//fr_enib_wwbsbapp_view_explorer/ChartView.instance"/>
+                                    </file>
+                                </folder>
+                                <folder name="tools">
+                                    <file name="ToolsTopComponent">
+                                    <!--fr.enib.navisu.app.view.tools.ToolsTopComponent-->
+                                    <attr
+                                    name="settings.providerPath" stringvalue="xml/lookups//fr_enib_navisu_app_view_tools/Tools.instance"/>
+                                    </file>
+                                </folder>
+                            </folder>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="fr_enib_navisu_app">
+                <file name="App.instance">
+                    <!--fr.enib.navisu.app.AppTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="fr.enib.navisu.app.AppTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="fr.enib.navisu.app.AppTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+            <folder name="fr_enib_wwbsbapp_view_explorer">
+                <file name="ChartView.instance">
+                    <!--fr.enib.navisu.app.view.explorer.ChartViewTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="fr.enib.navisu.app.view.explorer.ChartViewTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="fr.enib.navisu.app.view.explorer.ChartViewTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+            <folder name="fr_enib_navisu_app_view_tools">
+                <file name="Tools.instance">
+                    <!--fr.enib.navisu.app.view.tools.ToolsTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="fr.enib.navisu.app.view.tools.ToolsTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="fr.enib.navisu.app.view.tools.ToolsTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

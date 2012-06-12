@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<windowmanager version="2.1">
+    <main-window>
+  <joined-properties
+   x="50"
+   y="78"
+   width="1152"
+   height="885"
+   relative-x="0.0"
+   relative-y="0.0"
+   relative-width="0.0"
+   relative-height="0.0"
+   centered-horizontally="false"
+   centered-vertically="false"
+   maximize-if-width-below="0"
+   maximize-if-height-below="0"
+   frame-state="6"
+/>
+  <separated-properties
+   x="128"
+   y="98"
+   width="1024"
+   height="78"
+   relative-x="0.0"
+   relative-y="0.0"
+   relative-width="0.0"
+   relative-height="0.0"
+   centered-horizontally="false"
+   centered-vertically="false"
+   frame-state="0"
+/>
+  </main-window>
+    <editor-area state="joined" frame-state="0">
+  <constraints>
+  <path orientation="horizontal" number="60" weight="0.7598116169544741" />
+  <path orientation="vertical" number="40" weight="0.8238636363636364" />
+  <path orientation="horizontal" number="40" weight="0.7" />
+  </constraints>
+  <bounds x="422" y="236" width="537" height="432" />
+    </editor-area>
+    <screen width="1280" height="1024"/>
+    <active-mode name="explorer"/>
+    <toolbar configuration="Standard" preferred-icon-size="24"/>
+    <tc-list>
+  <tc-id id="ToolsTopComponent"/>
+  <tc-id id="AppTopComponent"/>
+  <tc-id id="ChartViewTopComponent"/>
+  <tc-id id="output"/>
+    </tc-list>
+</windowmanager>

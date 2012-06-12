@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="JTS">
+    <module_version install_time="1339492294599" last="true" origin="installer" specification_version="1.0">
+        <file crc="2556547006" name="config/Modules/JTS.xml"/>
+        <file crc="2566778956" name="modules/JTS.jar"/>
+        <file crc="2677321003" name="modules/ext/jts-1.8.jar"/>
+    </module_version>
+</module>

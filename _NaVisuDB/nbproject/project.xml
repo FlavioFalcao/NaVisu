@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>NaVisuDB</code-name-base>
+            <suite-component/>
+            <module-dependencies>
+                <dependency>
+                    <code-name-base>Derby</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <specification-version>1.0</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
+                    <code-name-base>EclipseLink</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <specification-version>1.0</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
+                    <code-name-base>JTS</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <specification-version>1.0</specification-version>
+                    </run-dependency>
+                </dependency>
+            </module-dependencies>
+            <friend-packages>
+                <friend>fr.enib.navisu.app</friend>
+                <friend>fr.enib.navisu.charts</friend>
+                <package>fr.enib.navisu.charts.model</package>
+                <package>fr.enib.navisu.charts.model.kap</package>
+                <package>fr.enib.navisu.charts.model.kap.worldwind</package>
+            </friend-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/NaVisuDB.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/NaVisuDB.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

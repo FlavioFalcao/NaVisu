@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="fr.enib.navisu.simulator">
+    <module_version install_time="1339492307942" last="true" origin="installer" specification_version="1.0">
+        <file crc="3913727230" name="config/Modules/fr-enib-navisu-simulator.xml"/>
+        <file crc="3949803785" name="modules/fr-enib-navisu-simulator.jar"/>
+    </module_version>
+</module>

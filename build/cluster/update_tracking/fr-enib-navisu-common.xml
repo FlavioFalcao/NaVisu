@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="fr.enib.navisu.common">
+    <module_version install_time="1339492306314" last="true" origin="installer" specification_version="1.0">
+        <file crc="1893717989" name="config/Modules/fr-enib-navisu-common.xml"/>
+        <file crc="3168708901" name="modules/fr-enib-navisu-common.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.openide.loaders">
+    <module_version install_time="1334085437293" last="true" origin="installer" specification_version="7.32.1">
+        <file crc="3241200" name="config/Modules/org-openide-loaders.xml"/>
+        <file crc="3750404530" name="modules/locale/org-openide-loaders_ja.jar"/>
+        <file crc="2062586814" name="modules/locale/org-openide-loaders_pt_BR.jar"/>
+        <file crc="2774584640" name="modules/locale/org-openide-loaders_ru.jar"/>
+        <file crc="95900179" name="modules/locale/org-openide-loaders_zh_CN.jar"/>
+        <file crc="2227088876" name="modules/org-openide-loaders.jar"/>
+    </module_version>
+</module>

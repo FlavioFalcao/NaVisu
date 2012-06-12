@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: fr.enib.navisu.common
+OpenIDE-Module-Localizing-Bundle: fr/enib/navisu/common/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="WWJ">
+    <module_version install_time="1339492304408" last="true" origin="installer" specification_version="1.0">
+        <file crc="60254058" name="config/Modules/WWJ.xml"/>
+        <file crc="2309519378" name="modules/WWJ.jar"/>
+        <file crc="3256228208" name="modules/ext/gdal.jar"/>
+        <file crc="3892086205" name="modules/ext/gluegen-rt-natives-windows-amd64.jar"/>
+        <file crc="231461169" name="modules/ext/gluegen-rt.jar"/>
+        <file crc="3111113797" name="modules/ext/jogl-natives-windows-amd64.jar"/>
+        <file crc="602694816" name="modules/ext/jogl.jar"/>
+        <file crc="3683324747" name="modules/ext/plugin.jar"/>
+        <file crc="1239904397" name="modules/ext/vpf-symbols.jar"/>
+        <file crc="2434001087" name="modules/ext/worldwind.jar"/>
+        <file crc="3012991358" name="modules/ext/worldwindx.jar"/>
+    </module_version>
+</module>

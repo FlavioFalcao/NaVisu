@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mode version="2.4">
+    <module name="org.netbeans.core.ui/1" spec="1.2" />
+    <name unique="explorer"  />
+  <kind type="view" />
+  <state type="joined"  />
+  <constraints>
+    <path orientation="horizontal" number="20" weight="0.2370486656200942"/>
+  </constraints>
+  <bounds x="128" y="216" width="409" height="492" />
+  <frame state="0"/>
+    <active-tc  id="ToolsTopComponent"  prev-id="ToolsTopComponent" />
+    <empty-behavior permanent="true"/>
+</mode>

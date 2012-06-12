@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.openide.execution">
+    <module_version install_time="1334085415710" last="true" origin="installer" specification_version="1.24.1">
+        <file crc="1899864534" name="config/Modules/org-openide-execution.xml"/>
+        <file crc="4104455439" name="modules/locale/org-openide-execution_ja.jar"/>
+        <file crc="711690497" name="modules/locale/org-openide-execution_pt_BR.jar"/>
+        <file crc="1284101295" name="modules/locale/org-openide-execution_ru.jar"/>
+        <file crc="3517819406" name="modules/locale/org-openide-execution_zh_CN.jar"/>
+        <file crc="3354260596" name="modules/org-openide-execution.jar"/>
+    </module_version>
+</module>

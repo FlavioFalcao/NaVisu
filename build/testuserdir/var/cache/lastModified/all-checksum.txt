@@ -1,0 +1,7 @@
+C:\Program Files\NetBeans 7.1.2\platform=1335944124898
+E:\Dev\NaVisu_RCP_2.0\build\cluster=1339492321187
+C:\Program Files\NetBeans 7.1.2\platform=1335944124898
+E:\Dev\NaVisu_RCP_2.0\build\testuserdir=1339492321187
+crc=7
+locale=fr_FR
+branding=navisu

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.print">
+    <module_version install_time="1334085422910" last="true" origin="installer" specification_version="7.11.1">
+        <file crc="4146358971" name="config/Modules/org-netbeans-modules-print.xml"/>
+        <file crc="1055852123" name="modules/locale/org-netbeans-modules-print_ja.jar"/>
+        <file crc="3114361840" name="modules/locale/org-netbeans-modules-print_pt_BR.jar"/>
+        <file crc="4008600706" name="modules/locale/org-netbeans-modules-print_ru.jar"/>
+        <file crc="2480192904" name="modules/locale/org-netbeans-modules-print_zh_CN.jar"/>
+        <file crc="2013887328" name="modules/org-netbeans-modules-print.jar"/>
+    </module_version>
+</module>

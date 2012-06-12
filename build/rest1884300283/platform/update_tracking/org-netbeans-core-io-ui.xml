@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.core.io.ui/1">
+    <module_version install_time="1334085487667" last="true" origin="installer" specification_version="1.14.1">
+        <file crc="937424920" name="config/Modules/org-netbeans-core-io-ui.xml"/>
+        <file crc="931030408" name="modules/locale/org-netbeans-core-io-ui_ja.jar"/>
+        <file crc="624780459" name="modules/locale/org-netbeans-core-io-ui_pt_BR.jar"/>
+        <file crc="2160281463" name="modules/locale/org-netbeans-core-io-ui_ru.jar"/>
+        <file crc="3876328133" name="modules/locale/org-netbeans-core-io-ui_zh_CN.jar"/>
+        <file crc="454554523" name="modules/org-netbeans-core-io-ui.jar"/>
+    </module_version>
+</module>

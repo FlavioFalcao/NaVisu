@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="NaVisuDB">
+    <module_version install_time="1339492295962" last="true" origin="installer" specification_version="1.0">
+        <file crc="1208791168" name="config/Modules/NaVisuDB.xml"/>
+        <file crc="3356487291" name="modules/NaVisuDB.jar"/>
+        <file crc="4178448677" name="modules/ext/NaVisuDB.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="fr.enib.navisu.charts">
+    <module_version install_time="1339492307102" last="true" origin="installer" specification_version="1.0">
+        <file crc="1994866062" name="config/Modules/fr-enib-navisu-charts.xml"/>
+        <file crc="1499024254" name="modules/fr-enib-navisu-charts.jar"/>
+    </module_version>
+</module>

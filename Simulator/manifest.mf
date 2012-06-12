@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: fr.enib.navisu.simulator
+OpenIDE-Module-Localizing-Bundle: fr/enib/navisu/simulator/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
