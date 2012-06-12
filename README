@@ -1,10 +1,10 @@
-Navisu is a nautical software which is allow you to display chart with WorldWind.
+Navisu is a nautical navigation software which allow you to display chart with WorldWind.
 
 Before starting NaVisu, go into the worldwind cache directory.
 
-On linux : ~/var/WorldWindData/Earth
+On linux : ~/var/cache/WorldWindData/Earth
 On Windows : C:/ProgramData/WorldWindData/Earth
 
-Create a folder called KapLayer and put your tiles inside it.
+Create a folder called KapLayer and put your tiles inside.
 
 Now, you can launch NaVisu and create the database by selecting the directory which contains your .kap files and here we go.
