@@ -1,4 +1,7 @@
-
+/*
+ * Ecole Nationale d'Ingénieurs de Brest (ENIB) - France
+ * (2012)
+ */
 package fr.enib.navisu.app.view.tools.tabs.layerstool;
 
 
@@ -15,8 +18,8 @@ import org.openide.windows.IOProvider;
 import org.openide.windows.InputOutput;
 
 /**
- *
- * @author jordan
+ * @author Jordan MENS & Thibault PENSEC
+ * @date 24/05/2012
  */
 public class CellRenderer extends DefaultTreeCellRenderer {
     

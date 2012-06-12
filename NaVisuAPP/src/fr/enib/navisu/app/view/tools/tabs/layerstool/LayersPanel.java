@@ -1,3 +1,8 @@
+/*
+ * Ecole Nationale d'Ingénieurs de Brest (ENIB) - France
+ * (2012)
+ */
+
 package fr.enib.navisu.app.view.tools.tabs.layerstool;
 
 import fr.enib.navisu.app.model.LayerTreeListModel;
@@ -19,8 +24,8 @@ import javax.swing.tree.TreeSelectionModel;
 import org.openide.util.NbPreferences;
 
 /**
- *
  * @author Jordan MENS & Thibault PENSEC
+ * @date 24/05/2012
  */
 public final class LayersPanel extends javax.swing.JPanel {
 
