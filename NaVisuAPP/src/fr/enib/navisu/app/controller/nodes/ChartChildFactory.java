@@ -60,7 +60,7 @@ public class ChartChildFactory extends ChildFactory<Chart> {
 
     @Override
     protected boolean createKeys(List<Chart> list) {
-        for (Chart chart : charts) {
+        for (Chart chart : charts) {    
             list.add(chart);
         }
         return true;
