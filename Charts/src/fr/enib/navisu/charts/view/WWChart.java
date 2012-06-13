@@ -85,7 +85,7 @@ public class WWChart {
     }
     
     private String findCacheLocation() {
-        Path cache = Paths.get(WWUtils.WWJ_DEFAULT_CACHE, "Earth/KapLayer", getModel().getId());
+        Path cache = Paths.get(WWUtils.WWJ_DEFAULT_CACHE, "Earth/ChartsLayer", getModel().getId());
         return Files.exists(cache) ? cache.toString() : null;
     }
     

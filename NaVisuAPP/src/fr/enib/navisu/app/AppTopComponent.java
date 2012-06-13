@@ -35,6 +35,10 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -257,7 +261,7 @@ public final class AppTopComponent extends TopComponent implements
         CONTROLLER.addAll(catalog);
     }
 
-    @Override // ChartsControllerEventListener
+    @Override
     public void selected(SelectEvent se, WWChart wwChart) {
         
         if (se.isRightClick()) {
@@ -333,6 +337,21 @@ public final class AppTopComponent extends TopComponent implements
 
     void writeProperties(java.util.Properties p) {}
     void readProperties(java.util.Properties p) {}
+
+    @Override
+    protected void componentOpened() {
+        // If the cache does not exists, we create it
+        String wwjcache = WWUtils.WWJ_DEFAULT_CACHE;
+        String kapCache = "Earth/ChartsLayer";
+        Path cache = Paths.get(wwjcache, kapCache);
+        if(!Files.exists(cache)) {
+            try {   
+                Files.createDirectory(cache);
+            } catch (IOException ex) {
+                Exceptions.printStackTrace(ex);
+            }
+        }
+    }
     
     private void print(Object s) {
         IO.getOut().println("[AppTopComponent] " + s.toString());

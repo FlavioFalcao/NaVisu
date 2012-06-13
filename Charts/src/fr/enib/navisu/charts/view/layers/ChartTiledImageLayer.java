@@ -26,7 +26,7 @@ public class ChartTiledImageLayer extends BasicTiledImageLayer {
     private static final double LAT_DEG = 90.0;
     private static final double LON_DEG = 90.0;
     
-    public static final String DEFAULT_DATA_CACHE_NAME = "Earth/KapLayer/";
+    public static final String DEFAULT_DATA_CACHE_NAME = "Earth/ChartsLayer/";
     
     /**
      * @param tileName The name of the tile layer name in data cache
