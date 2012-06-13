@@ -288,7 +288,6 @@ public final class AppTopComponent extends TopComponent implements
     // ======================================
     // =             Getters                =
     // ======================================
-
     public static WorldWindow wwd() {
         return WWD;
     }
