@@ -76,6 +76,9 @@ public final class AppTopComponent extends TopComponent implements
         SimulatorEventListener,
         ChartsControllerEventListener {
 
+    // ======================================
+    // =             Attributes             =
+    // ======================================
     private static final KAPChartCatalogDB DB = new KAPChartCatalogDB();
     private static final Logger LOGGER = Logger.getLogger(AppTopComponent.class.getName());
     private static final InputOutput IO = IOProvider.getDefault().getIO("NaVisu", true);
@@ -96,12 +99,14 @@ public final class AppTopComponent extends TopComponent implements
     private HighlightController highlightController;
     private HotSpotController hotSpotController;
     
-    private static Catalog<? extends Chart> CATALOG = null;
     private static boolean firstTime = true;
     // Simulator
     private static final Simulator SIMULATOR = new Simulator();
     private PointPlacemark placemarkSimu;
     
+    // ======================================
+    // =             Constructor            =
+    // ======================================
     public AppTopComponent() {
         initComponents();
         setName(Bundle.CTL_AppTopComponent());
@@ -119,14 +124,16 @@ public final class AppTopComponent extends TopComponent implements
         }
     }
 
-    //<editor-fold defaultstate="collapsed" desc="Init. Methods">
+    // =================================================
+    // =             Initialization methods            =
+    // =================================================
     private void initWWJ() {
-        print("Initialize WorldWind's components.");
+        print("Initialize WorldWind's components");
         
         // Initialiaze eye position (not animated)
-        double lat = PREFS.getDouble(ChartsPanel.KEY_DOUBLE_LAT, 0.0);
-        double lon = PREFS.getDouble(ChartsPanel.KEY_DOUBLE_LON, 0.0);
-        int ele = PREFS.getInt(ChartsPanel.KEY_INT_ELE, 1500000);
+        double lat = PREFS.getDouble(ChartsPanel.KEY_DOUBLE_LAT, 48.0561);
+        double lon = PREFS.getDouble(ChartsPanel.KEY_DOUBLE_LON, -3.5333);
+        int ele = PREFS.getInt(ChartsPanel.KEY_INT_ELE, 796986);
         WWUtils.setEyePosition(WWD, Position.fromDegrees(lat, lon, ele));
         
         // Add controllers to manage highlighting and tool tips.
@@ -161,7 +168,7 @@ public final class AppTopComponent extends TopComponent implements
     }
 
     private void initWWJLayers() {
-        print("Initialize WorldWind's layers.");
+        print("Initialize WorldWind's layers");
 
         // LatLon
         LatLonGraticuleLayer graticuleLayer = new LatLonGraticuleLayer();
@@ -184,20 +191,19 @@ public final class AppTopComponent extends TopComponent implements
     }
 
     private void initController() {
-        print("Initialize controller.");
+        print("Initialize controller");
 
         CONTROLLER.setDisplayNotTiled(false);
         CONTROLLER.addEventListener(this);
     }
 
     private void loadDatabase() {
-        
+        print("Load database");
         List<Chart> charts = new ArrayList<>(DB.size());
         for(Chart c : DB.readAll()) {
             charts.add(c);
         }
-        CATALOG = new Catalog<>(charts);
-        updateCatalog(CATALOG);
+        updateCatalog(new Catalog<>(charts));
     }
 
     private void initSimulator() {
@@ -220,9 +226,10 @@ public final class AppTopComponent extends TopComponent implements
         SIMULATOR.setInterpolationType(Simulator.INTERPOLATION_RHUMB);
         SIMULATOR.addEventListener(this);
     }
-    //</editor-fold>
     
-    //<editor-fold defaultstate="collapsed" desc="Events">
+    // ======================================
+    // =             Events                 =
+    // ======================================
     @Override
     public void updatePosition(SimulatorEvent event) {
         LatLon ll = event.getNewPosition();
@@ -245,8 +252,7 @@ public final class AppTopComponent extends TopComponent implements
     @Override
     public void updateCatalog(Catalog<? extends Chart> catalog) {
         print("updateCatalog(" + catalog.size() + " charts)");
-
-        CATALOG = catalog;
+        
         CONTROLLER.clear();
         CONTROLLER.addAll(catalog);
     }
@@ -274,12 +280,10 @@ public final class AppTopComponent extends TopComponent implements
             }
         }
     }
-    //</editor-fold>
     
-    //<editor-fold defaultstate="collapsed" desc="Getters">
-    public static Catalog<? extends Chart> catalog() {
-        return CATALOG;
-    }
+    // ======================================
+    // =             Getters                =
+    // ======================================
 
     public static WorldWindow wwd() {
         return WWD;
@@ -308,7 +312,6 @@ public final class AppTopComponent extends TopComponent implements
     public static Simulator simulator() {
         return SIMULATOR;
     }
-    //</editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

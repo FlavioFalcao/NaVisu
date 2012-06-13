@@ -24,15 +24,25 @@ import org.openide.util.lookup.Lookups;
 import org.openide.windows.InputOutput;
 
 /**
- * @author Jordan MENS & Thibault PENSEC @date 10/05/2012
+ *          --
+ *          -- navisu.enib.fr
+ *          --
+ * @author Jordan MENS & Thibault PENSEC 
+ * @date 10/05/2012
  */
 public class ChartChildFactory extends ChildFactory<Chart> {
 
+    // ======================================
+    // =             Attributes             =
+    // ======================================
     private List<Chart> charts;
     private Method[] methods;
     public static final InputOutput IO = AppTopComponent.io();
     private final ChartsController controller = AppTopComponent.controller();
     
+    // ======================================
+    // =             Constructor            =
+    // ======================================
     @SuppressWarnings("cast")
     public ChartChildFactory(List<Chart> charts) {
         this.charts = charts;
@@ -58,6 +68,9 @@ public class ChartChildFactory extends ChildFactory<Chart> {
         methods = (Method[]) l.toArray(new Method[l.size()]);
     }
 
+    // ======================================
+    // =             Methods                =
+    // ======================================
     @Override
     protected boolean createKeys(List<Chart> list) {
         for (Chart chart : charts) {    
@@ -73,12 +86,21 @@ public class ChartChildFactory extends ChildFactory<Chart> {
         return node;
     }
 
+    // ======================================
+    // =             Lazy class             =
+    // ======================================
     public class ChartNode extends AbstractNode implements ChartsControllerEventListener {
-
+        
+        // ======================================
+        // =             Attributes             =
+        // ======================================
         private final WWChart wwChart;
         private final Chart chart;
         private final ChartChildFactory parent;
 
+        // ======================================
+        // =             Constructor            =
+        // ======================================
         public ChartNode(final Chart chart, final ChartChildFactory parent, Children children, Lookup lookup) {
             super(children, lookup);
             this.chart = chart;
@@ -119,12 +141,12 @@ public class ChartChildFactory extends ChildFactory<Chart> {
             Action[] actions = super.getActions(context);
 
             List<Action> newActionsList = new ArrayList<>(3);
-            newActionsList.add(new DisplayChartNodeAction(this, chart));
             newActionsList.add(new GotoChartNodeAction(chart));
+            newActionsList.add(new DisplayChartNodeAction(this, chart));
             newActionsList.add(new DisplayAndGotoChartNodeAction(this, chart));
 
             Action[] newActions = new Action[newActionsList.size()];
-            for (int i = 0; i < (wwChart.isVisible() ? 2 : 3); i++) {
+            for (int i = 0; i < (wwChart.isTiled() ? wwChart.isVisible() ? 2 : 3 : 1); i++) {
                 newActions[i] = newActionsList.get(i);
             }
 
@@ -177,9 +199,5 @@ public class ChartChildFactory extends ChildFactory<Chart> {
                 refresh();
             }
         }
-    }
-    
-    private void print(Object str) {
-        IO.getOut().println("[ChartChildFactory] " + str);
     }
 }
