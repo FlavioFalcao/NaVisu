@@ -125,6 +125,7 @@ public final class AppTopComponent extends TopComponent implements
             initController();
             loadDatabase();
             initSimulator();
+            System.out.println("Hello NaVisu");
         }
     }
 
