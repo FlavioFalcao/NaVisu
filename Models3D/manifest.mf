@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: fr.enib.navisu.models3D
+OpenIDE-Module-Localizing-Bundle: fr/enib/navisu/models3D/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

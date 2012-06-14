@@ -11,6 +11,7 @@
                 <friend>fr.enib.navisu.charts</friend>
                 <friend>fr.enib.navisu.common</friend>
                 <friend>fr.enib.navisu.measuretool</friend>
+                <friend>fr.enib.navisu.models3D</friend>
                 <friend>fr.enib.navisu.simulator</friend>
                 <package>com.sun.deploy.util</package>
                 <package>com.sun.gluegen.runtime</package>

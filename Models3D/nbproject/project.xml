@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>fr.enib.navisu.models3D</code-name-base>
+            <suite-component/>
+            <module-dependencies>
+                <dependency>
+                    <code-name-base>WWJ</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <specification-version>1.0</specification-version>
+                    </run-dependency>
+                </dependency>
+            </module-dependencies>
+            <friend-packages>
+                <friend>fr.enib.navisu.app</friend>
+                <package>fr.enib.navisu.models3D.controller</package>
+                <package>fr.enib.navisu.models3D.model.kml</package>
+                <package>fr.enib.navisu.models3D.model.obj3ds</package>
+                <package>fr.enib.navisu.util</package>
+                <package>net.java.joglutils.model</package>
+                <package>net.java.joglutils.model.examples</package>
+                <package>net.java.joglutils.model.geometry</package>
+                <package>net.java.joglutils.model.loader</package>
+            </friend-packages>
+        </data>
+    </configuration>
+</project>
