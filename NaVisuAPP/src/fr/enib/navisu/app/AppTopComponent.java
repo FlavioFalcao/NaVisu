@@ -210,10 +210,11 @@ public final class AppTopComponent extends TopComponent implements
         ship3D.getMovable3DModel().getModel().setUseLighting(true);
         RenderableLayer layer = new RenderableLayer();
         layer.addRenderable(ship3D.getMovable3DModel());
+        layer.setName("Lithops");
         WWUtils.insertBeforeCompass(WWD, layer);
 
         // Chargement des objets en KML en arriere plan
-        //new LoaderSW().execute();
+        new LoaderSW().execute();
     }
 
     class LoaderSW
@@ -226,7 +227,7 @@ public final class AppTopComponent extends TopComponent implements
         public Integer doInBackground() {
             // load3DLayer("data/buildings", "kmz", "Buildings");
             load3DLayer("data/lightHouses", "kmz", "LightHouses");
-            load3DLayer("data/lithops", "kmz", "Lithops");
+            load3DLayer("data/ships", "kmz", "Ships");
             return 1;
         }
 
