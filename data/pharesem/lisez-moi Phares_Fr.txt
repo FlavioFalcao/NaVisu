@@ -1,0 +1,30 @@
+Bonjour,
+
+Quelques explications concernant les informations présentes dans la collecte des phares, vigies, amers, etc ...  
+
+La syntaxe utilisée est :
+
+sa.aaaaa,bb.bbbbb,[Etiquette nv] dd Ville - Nom (détails1) (détails2)
+
+sa.aaaaa = 	longitude - les longitudes à l'ouest du méridien de Greenwich sont négatives.
+bb.bbbbb = 	latitude
+Etiquette = 	Type :	phare / vigie / amer / sémaphore / feu / cap / port
+dd =		numéro du département
+Ville = 	nom de la localité où se trouve le POI
+Nom =		nom sous lequel le POI ou le port est communément désigné
+détails1 =	informations diverses concernant le POI
+détails2 =	complément d'informations concernant le POI 
+
+exemple pour les phares :
+	détails1 : les caractéristiques du phare
+	détails2 : informations touristiques le concernant :
+	a = automatisé 		na = non automatisé
+	g = gardienné 		ng = non gardienné
+	v = se visite 		nv = ne se visite pas
+		(v) = 	visite sous conditions (rendez_vous, groupe, …)
+	r = en ruines ou disparu
+
+
+... et bonnes collectes
+
+@micalement

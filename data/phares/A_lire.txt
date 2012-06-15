@@ -1,0 +1,6 @@
+Liste des phares et pointes des côtes corses et françaises.
+Le fichier phares_fr.bmp pour Tomtom et le fichier phares.bmp pour les autres.
+
+M.G.Suder
+
+
